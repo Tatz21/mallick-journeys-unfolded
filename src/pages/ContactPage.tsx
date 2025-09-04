@@ -8,24 +8,24 @@ import { MapPin, Phone, Mail, Clock, MessageCircle, Calendar, Globe } from "luci
 const ContactPage = () => {
   const offices = [
     {
-      city: "Mumbai (Head Office)",
-      address: "123 Travel Street, Tourism District, Mumbai - 400001",
-      phone: "+91 98765 43210",
-      email: "mumbai@mallicktravels.com",
+      city: "Kolkata (Head Office)",
+      address: "Phoenix Business Center, Kolkata - 700001",
+      phone: "+91 93301 02817",
+      email: "travel@phoenixrealesthatic.com",
       hours: "Mon - Sat: 9:00 AM - 7:00 PM"
     },
     {
       city: "Delhi",
-      address: "456 Adventure Avenue, Connaught Place, New Delhi - 110001",
-      phone: "+91 98765 43211",
-      email: "delhi@mallicktravels.com",
+      address: "Phoenix Tower, Connaught Place, New Delhi - 110001",
+      phone: "+91 93301 02818",
+      email: "delhi.travel@phoenixrealesthatic.com",
       hours: "Mon - Sat: 9:00 AM - 7:00 PM"
     },
     {
-      city: "Bangalore",
-      address: "789 Explorer Lane, MG Road, Bangalore - 560001",
-      phone: "+91 98765 43212",
-      email: "bangalore@mallicktravels.com",
+      city: "Mumbai",
+      address: "Phoenix Complex, Bandra West, Mumbai - 400050",
+      phone: "+91 93301 02819",
+      email: "mumbai.travel@phoenixrealesthatic.com",
       hours: "Mon - Sat: 9:00 AM - 7:00 PM"
     }
   ];
@@ -35,7 +35,7 @@ const ContactPage = () => {
       icon: Phone,
       title: "Call Us",
       description: "Speak directly with our travel experts",
-      value: "+91 98765 43210",
+      value: "+91 93301 02817",
       action: "Call Now",
       available: "24/7 Emergency Support"
     },
@@ -43,7 +43,7 @@ const ContactPage = () => {
       icon: Mail,
       title: "Email Us",
       description: "Send us your travel requirements",
-      value: "info@mallicktravels.com",
+      value: "travel@phoenixrealesthatic.com",
       action: "Send Email",
       available: "Response within 2 hours"
     },

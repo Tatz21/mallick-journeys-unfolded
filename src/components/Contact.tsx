@@ -10,17 +10,17 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "123 Travel Street, Tourism District, Mumbai - 400001"
+      content: "Phoenix Business Center, Kolkata - 700001"
     },
     {
       icon: Phone,
       title: "Call Us",
-      content: "+91 98765 43210"
+      content: "+91 93301 02817"
     },
     {
       icon: Mail,
       title: "Email Us",
-      content: "info@mallicktravels.com"
+      content: "travel@phoenixrealesthatic.com"
     },
     {
       icon: Clock,

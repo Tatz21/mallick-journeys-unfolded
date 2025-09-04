@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
+import CompanyConnection from "@/components/CompanyConnection";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Globe, Heart, Plane, Shield, Clock, Star } from "lucide-react";
@@ -78,6 +79,9 @@ const AboutPage = () => {
 
       {/* Main About Section */}
       <About />
+
+      {/* Company Connection */}
+      <CompanyConnection />
 
       {/* Our Story */}
       <section className="py-20">
@@ -215,9 +219,11 @@ const AboutPage = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Create Your Story?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied travelers who have trusted us with their dream vacations.
-          </p>
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              For over 15 years, Mallick Travels has been part of the Phoenix Group, bringing you the same 
+              trusted management and quality service across multiple industries. Join thousands of satisfied 
+              travelers who have trusted us with their dream vacations.
+            </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90">
               Start Planning
