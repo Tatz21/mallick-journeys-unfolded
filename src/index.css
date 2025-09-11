@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Travel-themed color palette - Ocean blues, sunset oranges, nature greens */
-    --background: 210 100% 98%;
-    --foreground: 210 15% 15%;
+    /* Clean, modern color palette inspired by SkyBound */
+    --background: 248 250 252;
+    --foreground: 15 23 42;
 
-    --card: 210 100% 100%;
-    --card-foreground: 210 15% 15%;
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
 
-    --popover: 210 100% 100%;
-    --popover-foreground: 210 15% 15%;
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
 
-    /* Ocean blue primary */
-    --primary: 210 85% 45%;
-    --primary-foreground: 210 100% 98%;
-    --primary-glow: 210 100% 75%;
+    /* Dark slate primary */
+    --primary: 15 23 42;
+    --primary-foreground: 248 250 252;
+    --primary-glow: 71 85 105;
 
-    /* Sunset orange secondary */
-    --secondary: 25 95% 65%;
-    --secondary-foreground: 25 15% 15%;
+    /* Bright yellow accent (like SkyBound) */
+    --secondary: 45 93 47;
+    --secondary-foreground: 15 23 42;
 
-    /* Soft ocean mist */
-    --muted: 210 40% 96%;
-    --muted-foreground: 210 15% 45%;
+    /* Light gray muted */
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
 
-    /* Nature green accent */
-    --accent: 145 75% 55%;
-    --accent-foreground: 145 15% 15%;
+    /* Yellow accent for highlights */
+    --accent: 45 93 47;
+    --accent-foreground: 15 23 42;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 100% 98%;
+    --destructive-foreground: 248 250 252;
 
-    --border: 210 30% 88%;
-    --input: 210 30% 92%;
-    --ring: 210 85% 45%;
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 15 23 42;
 
     --radius: 0.75rem;
     
-    /* Custom gradients */
-    --gradient-ocean: linear-gradient(135deg, hsl(210, 85%, 45%), hsl(210, 100%, 75%));
-    --gradient-sunset: linear-gradient(135deg, hsl(25, 95%, 65%), hsl(35, 100%, 75%));
+    /* Modern gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(15, 23%, 42%), hsl(71, 85%, 105%));
+    --gradient-sunset: linear-gradient(135deg, hsl(45, 93%, 47%), hsl(25, 95%, 65%));
     --gradient-nature: linear-gradient(135deg, hsl(145, 75%, 55%), hsl(160, 80%, 65%));
     
-    /* Custom shadows */
-    --shadow-travel: 0 10px 30px -10px hsl(210 85% 45% / 0.3);
-    --shadow-soft: 0 4px 20px -4px hsl(210 30% 50% / 0.15);
+    /* Clean shadows */
+    --shadow-travel: 0 10px 25px -3px hsl(15 23% 42% / 0.1), 0 4px 6px -2px hsl(15 23% 42% / 0.05);
+    --shadow-soft: 0 4px 6px -1px hsl(15 23% 42% / 0.1), 0 2px 4px -1px hsl(15 23% 42% / 0.06);
 
     --sidebar-background: 0 0% 98%;
 
