@@ -30,6 +30,16 @@ const Header = () => {
                   : "text-white/80 hover:text-white hover:bg-white/5"
               }`}
             >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className={`text-sm font-medium transition-colors px-4 py-2 rounded-lg ${
+                isActive('/about') 
+                  ? "bg-white/10 text-white font-semibold" 
+                  : "text-white/80 hover:text-white hover:bg-white/5"
+              }`}
+            >
               About
             </Link>
             <Link
@@ -50,17 +60,7 @@ const Header = () => {
                   : "text-white/80 hover:text-white hover:bg-white/5"
               }`}
             >
-              Tour
-            </Link>
-            <Link
-              to="/about"
-              className={`text-sm font-medium transition-colors px-4 py-2 rounded-lg ${
-                isActive('/about') 
-                  ? "bg-white/10 text-white font-semibold" 
-                  : "text-white/80 hover:text-white hover:bg-white/5"
-              }`}
-            >
-              About
+              Destinations
             </Link>
             <Link
               to="/contact"
@@ -103,6 +103,15 @@ const Header = () => {
                 }`} 
                 onClick={() => setIsMenuOpen(false)}
               >
+                Home
+              </Link>
+              <Link 
+                to="/about" 
+                className={`px-4 py-3 rounded-lg transition-colors ${
+                  isActive('/about') ? 'bg-white/10 text-white font-semibold' : 'text-white/80 hover:text-white hover:bg-white/5'
+                }`} 
+                onClick={() => setIsMenuOpen(false)}
+              >
                 About
               </Link>
               <Link 
@@ -121,16 +130,7 @@ const Header = () => {
                 }`} 
                 onClick={() => setIsMenuOpen(false)}
               >
-                Tour
-              </Link>
-              <Link 
-                to="/about" 
-                className={`px-4 py-3 rounded-lg transition-colors ${
-                  isActive('/about') ? 'bg-white/10 text-white font-semibold' : 'text-white/80 hover:text-white hover:bg-white/5'
-                }`} 
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
+                Destinations
               </Link>
               <Link 
                 to="/contact" 
