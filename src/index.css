@@ -2,103 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Indotravi Travel Design System - Inspired by Indonesian natural beauty */
 
 @layer base {
   :root {
-    /* Clean, modern color palette inspired by SkyBound */
-    --background: 248 250 252;
-    --foreground: 15 23 42;
+    /* Pure whites and natural backgrounds */
+    --background: 0 0% 100%;
+    --foreground: 210 40% 10%;
 
-    --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 10%;
 
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 10%;
 
-    /* Dark slate primary */
-    --primary: 15 23 42;
-    --primary-foreground: 248 250 252;
-    --primary-glow: 71 85 105;
+    /* Deep navy primary (like Indonesian night sky) */
+    --primary: 210 100% 8%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 50% 20%;
 
-    /* Bright yellow accent (like SkyBound) */
-    --secondary: 45 93 47;
-    --secondary-foreground: 15 23 42;
+    /* Warm orange secondary (like Indonesian sunset) */
+    --secondary: 25 100% 60%;
+    --secondary-foreground: 0 0% 100%;
 
     /* Light gray muted */
-    --muted: 241 245 249;
-    --muted-foreground: 100 116 139;
+    --muted: 210 40% 98%;
+    --muted-foreground: 210 20% 50%;
 
-    /* Yellow accent for highlights */
-    --accent: 45 93 47;
-    --accent-foreground: 15 23 42;
+    /* Teal accent (like Indonesian ocean) */
+    --accent: 180 100% 40%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 248 250 252;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 15 23 42;
+    --border: 210 20% 90%;
+    --input: 210 20% 95%;
+    --ring: 210 100% 8%;
 
     --radius: 0.75rem;
     
-    /* Modern gradients */
-    --gradient-ocean: linear-gradient(135deg, hsl(15, 23%, 42%), hsl(71, 85%, 105%));
-    --gradient-sunset: linear-gradient(135deg, hsl(45, 93%, 47%), hsl(25, 95%, 65%));
-    --gradient-nature: linear-gradient(135deg, hsl(145, 75%, 55%), hsl(160, 80%, 65%));
+    /* Indonesian-inspired gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210, 100%, 8%) 0%, hsl(210, 80%, 15%) 50%, hsl(180, 60%, 30%) 100%);
+    --gradient-ocean: linear-gradient(135deg, hsl(180, 100%, 40%), hsl(200, 100%, 50%));
+    --gradient-sunset: linear-gradient(135deg, hsl(25, 100%, 60%), hsl(45, 100%, 70%));
+    --gradient-nature: linear-gradient(135deg, hsl(120, 60%, 40%), hsl(160, 70%, 50%));
     
-    /* Clean shadows */
-    --shadow-travel: 0 10px 25px -3px hsl(15 23% 42% / 0.1), 0 4px 6px -2px hsl(15 23% 42% / 0.05);
-    --shadow-soft: 0 4px 6px -1px hsl(15 23% 42% / 0.1), 0 2px 4px -1px hsl(15 23% 42% / 0.06);
+    /* Professional shadows */
+    --shadow-travel: 0 20px 40px -12px hsl(210 100% 8% / 0.25);
+    --shadow-card: 0 4px 24px -8px hsl(210 20% 50% / 0.15);
+    --shadow-soft: 0 2px 8px -4px hsl(210 20% 50% / 0.1);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 210 25% 8%;
-    --foreground: 210 100% 98%;
+    --background: 210 40% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 210 25% 10%;
-    --card-foreground: 210 100% 98%;
+    --card: 210 40% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 210 25% 10%;
-    --popover-foreground: 210 100% 98%;
+    --popover: 210 40% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 100% 75%;
-    --primary-foreground: 210 25% 8%;
-    --primary-glow: 210 85% 65%;
+    --primary: 180 100% 40%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 180 80% 50%;
 
-    --secondary: 25 80% 55%;
-    --secondary-foreground: 25 100% 98%;
+    --secondary: 25 100% 60%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 20% 15%;
-    --muted-foreground: 210 40% 65%;
+    --muted: 210 40% 10%;
+    --muted-foreground: 210 20% 70%;
 
-    --accent: 145 65% 50%;
-    --accent-foreground: 145 100% 98%;
+    --accent: 180 100% 40%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 70% 55%;
-    --destructive-foreground: 210 100% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 210 20% 20%;
-    --input: 210 20% 18%;
-    --ring: 210 100% 75%;
+    --border: 210 40% 15%;
+    --input: 210 40% 12%;
+    --ring: 180 100% 40%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -125,6 +118,11 @@ All colors MUST be HSL.
 }
 
 @layer components {
+  /* Hero gradient background */
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
   .gradient-ocean {
     background: var(--gradient-ocean);
   }
@@ -137,11 +135,29 @@ All colors MUST be HSL.
     background: var(--gradient-nature);
   }
   
+  /* Professional shadows */
   .shadow-travel {
     box-shadow: var(--shadow-travel);
   }
   
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
   .shadow-soft {
     box-shadow: var(--shadow-soft);
+  }
+  
+  /* Hero text styles */
+  .hero-title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  
+  /* Stats card styles */
+  .stats-card {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center text-white;
   }
 }
